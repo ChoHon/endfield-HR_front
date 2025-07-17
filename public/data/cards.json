@@ -3,7 +3,7 @@
         "id": "card-1",
         "title": "Card 1",
         "description": "This is the first card",
-        "image": "./public/image/character/jin.webp",
+        "image": "./image/character/jin.webp",
         "imgPosition": 25,
         "imgScale": 2.5
     },
@@ -11,7 +11,7 @@
         "id": "card-2",
         "title": "Card 2",
         "description": "This is the second card",
-        "image": "./public/image/character/wolf.webp",
+        "image": "./image/character/wolf.webp",
         "imgPosition": 0,
         "imgScale": 3
     },
@@ -19,7 +19,7 @@
         "id": "card-3",
         "title": "Card 3",
         "description": "This is the third card",
-        "image": "./public/image/character/ebon.webp",
+        "image": "./image/character/ebon.webp",
         "imgPosition": 25,
         "imgScale": 2.5
     }
