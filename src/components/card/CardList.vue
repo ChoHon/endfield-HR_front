@@ -4,7 +4,7 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 
 interface CardData {
-  id: string
+  id: number
   title: string
   description: string
   image: string

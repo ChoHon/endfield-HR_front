@@ -5,17 +5,15 @@ import HeaderDescription from '@/components/header/HeaderDescription.vue'
 import CharacterDetail from '@/components/content/CharacterDetail.vue'
 
 interface CardData {
-  id: string
+  id: number
   title: string
   description: string
   image: string
-  imgPosition: number
-  imgScale: number
 }
 
 const route = useRoute()
 const cards = ref<CardData[]>([])
-const characterId = computed(() => route.params.id as string)
+const characterId = computed(() => Number(route.params.id))
 
 // 현재 캐릭터 데이터 찾기
 const currentCharacter = computed(() => {

@@ -1,7 +1,12 @@
 <script setup lang="ts">
-import AppLayout from './components/AppLayout.vue'
+import NavigationBar from '@/components/menu/NavigationBar.vue'
 </script>
 
 <template>
-  <AppLayout />
+  <div class="min-h-full">
+    <NavigationBar />
+
+    <!-- 메인 -->
+    <RouterView />
+  </div>
 </template>
