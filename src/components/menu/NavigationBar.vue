@@ -17,7 +17,7 @@ const user = {
     'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
+  { name: '캐릭터 정보', href: '/', current: true },
   { name: 'Team', href: '#', current: false },
   { name: 'Projects', href: '#', current: false },
   { name: 'Calendar', href: '#', current: false },
@@ -41,13 +41,13 @@ const userNavigation = [
             <!-- 모바일 버전 -->
             <img
               class="block h-8 w-auto lg:hidden"
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=yellow&shade=600"
               alt="Your Company"
             />
             <!-- 데스크탑 버전 -->
             <img
               class="hidden h-8 w-auto lg:block"
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=yellow&shade=600"
               alt="Your Company"
             />
           </div>
@@ -60,7 +60,7 @@ const userNavigation = [
               :href="item.href"
               :class="[
                 item.current
-                  ? 'border-indigo-500 text-gray-900'
+                  ? 'border-primary text-gray-900'
                   : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
                 'inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium',
               ]"
@@ -76,7 +76,7 @@ const userNavigation = [
           <Menu as="div" class="relative ml-3">
             <div>
               <MenuButton
-                class="relative flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-hidden focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
+                class="relative flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               >
                 <span class="absolute -inset-1.5" />
                 <span class="sr-only">Open user menu</span>
@@ -111,7 +111,7 @@ const userNavigation = [
         <!-- 모바일 메뉴 버튼 -->
         <div class="-mr-2 flex items-center sm:hidden">
           <DisclosureButton
-            class="relative inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden"
+            class="relative inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:outline-hidden"
           >
             <span class="absolute -inset-0.5" />
             <span class="sr-only">Open main menu</span>
@@ -133,7 +133,7 @@ const userNavigation = [
           :href="item.href"
           :class="[
             item.current
-              ? 'border-indigo-500 bg-indigo-50 text-indigo-700'
+              ? 'border-primary bg-yellow-50 text-primary'
               : 'border-transparent text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800',
             'block border-l-4 py-2 pr-4 pl-3 text-base font-medium',
           ]"
